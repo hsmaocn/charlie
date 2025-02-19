@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="周深歌迷制作的哔哩哔哩视频推广页，感受周深的音乐魅力！">
-    <meta name="keywords" content="周深, 哔哩哔哩, 歌迷, 音乐, 视频">
+    <meta name="description" content="周深歌迷推广页，汇集周深在各大平台的精彩视频和资讯！">
+    <meta name="keywords" content="周深, 歌迷, 音乐, 视频, 新闻, 推广">
     <meta name="author" content="Your Name">
-    <title>周深歌迷视频推广页</title>
+    <title>周深歌迷推广页</title>
     <!-- 引入 MDUI CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css">
     <!-- 自定义样式 -->
     <style>
         body {
@@ -21,13 +21,13 @@
             padding: 100px 20px;
             text-align: center;
         }
-        .video-card {
+        .content-item {
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        .video-card:hover {
+        .content-item:hover {
             transform: translateY(-5px);
         }
         .footer {
@@ -58,100 +58,98 @@
 </head>
 <body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
 
-    <!-- Header Section -->
-    <header class="header">
-        <h1 class="mdui-typo-display-2">周深歌迷视频推广页</h1>
-        <p class="mdui-typo-title">感受周深的音乐魅力，欣赏歌迷制作的精彩视频合集！</p>
+    <!-- Navigation Bar -->
+    <header class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="index.html" class="mdui-typo-headline">周深歌迷推广页</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="index.html" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">home</i></a>
+            <a href="about.html" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">info</i></a>
+            <a href="contact.html" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">mail</i></a>
+        </div>
     </header>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="mdui-typo-display-2">周深歌迷推广页</h1>
+        <p class="mdui-typo-title">汇集周深在各大平台的精彩视频和资讯，感受音乐的魅力！</p>
+    </div>
 
     <!-- Tag Filter Section -->
     <div class="mdui-container mt-5">
-        <h3 class="mdui-typo-headline mdui-text-center mdui-m-b-4">视频分类标签</h3>
+        <h3 class="mdui-typo-headline mdui-text-center mdui-m-b-4">内容分类标签</h3>
         <div class="mdui-row mdui-m-b-4">
             <div class="mdui-col-xs-12 mdui-text-center">
                 <span class="mdui-chip tag mdui-color-theme" data-tag="all">全部</span>
-                <span class="mdui-chip tag" data-tag="live">现场演出</span>
-                <span class="mdui-chip tag" data-tag="cover">翻唱</span>
-                <span class="mdui-chip tag" data-tag="mv">MV</span>
-                <span class="mdui-chip tag" data-tag="interview">采访</span>
+                <span class="mdui-chip tag" data-tag="bilibili">哔哩哔哩</span>
+                <span class="mdui-chip tag" data-tag="youtube">YouTube</span>
+                <span class="mdui-chip tag" data-tag="weibo">微博</span>
+                <span class="mdui-chip tag" data-tag="news">新闻资讯</span>
             </div>
         </div>
     </div>
 
-    <!-- Video List Section -->
+    <!-- Content List Section -->
     <div class="mdui-container">
         <div class="mdui-row video-list">
-            <!-- 视频卡片 1 -->
-            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 video-item" data-tags="live mv">
-                <div class="mdui-card video-card">
+            <!-- 内容卡片 1 -->
+            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 content-item" data-tags="bilibili">
+                <div class="mdui-card">
                     <div class="mdui-card-media">
-                        <div class="mdui-video-fluid">
-                            <iframe src="https://player.bilibili.com/player.html?bvid=BV1Xx411c7mD&high_quality=1&danmaku=0" 
-                                    allowfullscreen></iframe>
-                        </div>
+                        <img src="https://via.placeholder.com/300x200?text=Bilibili+Video" alt="Bilibili Video">
                         <div class="mdui-card-menu">
                             <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">share</i></button>
                         </div>
                     </div>
                     <div class="mdui-card-content">
-                        <h3 class="mdui-card-primary-title">周深现场演出</h3>
-                        <p class="mdui-card-primary-subtitle">这是周深的一场精彩现场演出。</p>
+                        <h3 class="mdui-card-primary-title">周深哔哩哔哩视频</h3>
+                        <p class="mdui-card-primary-subtitle">这是周深在哔哩哔哩上的一段精彩表演。</p>
+                        <a href="https://www.bilibili.com" target="_blank" class="mdui-btn mdui-btn-raised mdui-color-theme-accent">观看视频</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 视频卡片 2 -->
-            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 video-item" data-tags="cover interview">
-                <div class="mdui-card video-card">
+            <!-- 内容卡片 2 -->
+            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 content-item" data-tags="youtube">
+                <div class="mdui-card">
                     <div class="mdui-card-media">
-                        <div class="mdui-video-fluid">
-                            <iframe src="https://player.bilibili.com/player.html?bvid=BV1Yx411c7mE&high_quality=1&danmaku=0" 
-                                    allowfullscreen></iframe>
-                        </div>
+                        <img src="https://via.placeholder.com/300x200?text=YouTube+Video" alt="YouTube Video">
                         <div class="mdui-card-menu">
                             <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">share</i></button>
                         </div>
                     </div>
                     <div class="mdui-card-content">
-                        <h3 class="mdui-card-primary-title">周深翻唱经典歌曲</h3>
-                        <p class="mdui-card-primary-subtitle">这是周深翻唱的经典歌曲视频。</p>
+                        <h3 class="mdui-card-primary-title">周深 YouTube 视频</h3>
+                        <p class="mdui-card-primary-subtitle">这是周深在 YouTube 上的一段精彩表演。</p>
+                        <a href="https://www.youtube.com" target="_blank" class="mdui-btn mdui-btn-raised mdui-color-theme-accent">观看视频</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 视频卡片 3 -->
-            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 video-item" data-tags="mv live">
-                <div class="mdui-card video-card">
-                    <div class="mdui-card-media">
-                        <div class="mdui-video-fluid">
-                            <iframe src="https://player.bilibili.com/player.html?bvid=BV1Zx411c7mF&high_quality=1&danmaku=0" 
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div class="mdui-card-menu">
-                            <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">share</i></button>
-                        </div>
-                    </div>
-                    <div class="mdui-card-content">
-                        <h3 class="mdui-card-primary-title">周深最新 MV</h3>
-                        <p class="mdui-card-primary-subtitle">这是周深最新发布的 MV。</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 添加更多视频卡片 -->
+            <!-- 添加更多内容卡片 -->
         </div>
+    </div>
+
+    <!-- Pagination Section -->
+    <div class="mdui-container mdui-m-t-4">
+        <ul class="mdui-pagination mdui-center">
+            <li class="mdui-pagination-item"><a href="index.html">1</a></li>
+            <li class="mdui-pagination-item"><a href="page2.html">2</a></li>
+            <li class="mdui-pagination-item"><a href="page3.html">3</a></li>
+        </ul>
     </div>
 
     <!-- Footer Section -->
     <footer class="footer">
         <p class="mdui-typo-caption">
             &copy; 2023 周深歌迷推广页 | 
-            <a href="https://space.bilibili.com/your_space_id" target="_blank">访问哔哩哔哩主页</a>
+            <a href="about.html">关于我们</a> | 
+            <a href="contact.html">联系我们</a>
         </p>
     </footer>
 
     <!-- 引入 MDUI JS -->
-    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js"></script>
     <!-- 自定义脚本 -->
     <script>
         // 标签筛选功能
@@ -165,19 +163,19 @@
                 // 高亮当前选中的标签
                 tag.classList.add('mdui-color-theme');
 
-                // 显示或隐藏视频
-                document.querySelectorAll('.video-item').forEach(video => {
-                    const tags = video.getAttribute('data-tags');
+                // 显示或隐藏内容
+                document.querySelectorAll('.content-item').forEach(item => {
+                    const tags = item.getAttribute('data-tags');
                     if (selectedTag === 'all' || tags.includes(selectedTag)) {
-                        video.classList.remove('hidden');
+                        item.classList.remove('hidden');
                     } else {
-                        video.classList.add('hidden');
+                        item.classList.add('hidden');
                     }
                 });
             });
         });
 
-        // 默认显示所有视频
+        // 默认显示所有内容
         document.querySelector('.tag[data-tag="all"]').click();
     </script>
 </body>
