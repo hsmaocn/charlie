@@ -7,8 +7,8 @@
     <meta name="keywords" content="周深, 歌迷, 音乐, 视频, 新闻, 推广">
     <meta name="author" content="Your Name">
     <title>周深歌迷推广页</title>
-    <!-- 引入 MDUI CSS -->
-    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css">
+    <!-- 引入 MDUI CSS（字节跳动 CDN） -->
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css">
     <!-- 自定义样式 -->
     <style>
         body {
@@ -16,10 +16,19 @@
             background-color: #f5f5f5;
         }
         .header {
-            background: linear-gradient(135deg, #6200ea, #3700b3);
+            position: relative;
             color: white;
-            padding: 100px 20px;
             text-align: center;
+            padding: 100px 20px;
+            overflow: hidden;
+            background-image: url('https://via.placeholder.com/1920x1080?text=Background+Image');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
         }
         .content-item {
             margin-bottom: 20px;
@@ -69,10 +78,13 @@
         </div>
     </header>
 
-    <!-- Header Section -->
+    <!-- Header Section with Image Background -->
     <div class="header">
-        <h1 class="mdui-typo-display-2">周深歌迷推广页</h1>
-        <p class="mdui-typo-title">汇集周深在各大平台的精彩视频和资讯，感受音乐的魅力！</p>
+        <!-- 文字内容 -->
+        <div class="header-content">
+            <h1 class="mdui-typo-display-2">周深歌迷推广页</h1>
+            <p class="mdui-typo-title">汇集周深在各大平台的精彩视频和资讯，感受音乐的魅力！</p>
+        </div>
     </div>
 
     <!-- Tag Filter Section -->
@@ -109,23 +121,6 @@
                 </div>
             </div>
 
-            <!-- 内容卡片 2 -->
-            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 content-item" data-tags="youtube">
-                <div class="mdui-card">
-                    <div class="mdui-card-media">
-                        <img src="https://via.placeholder.com/300x200?text=YouTube+Video" alt="YouTube Video">
-                        <div class="mdui-card-menu">
-                            <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">share</i></button>
-                        </div>
-                    </div>
-                    <div class="mdui-card-content">
-                        <h3 class="mdui-card-primary-title">周深 YouTube 视频</h3>
-                        <p class="mdui-card-primary-subtitle">这是周深在 YouTube 上的一段精彩表演。</p>
-                        <a href="https://www.youtube.com" target="_blank" class="mdui-btn mdui-btn-raised mdui-color-theme-accent">观看视频</a>
-                    </div>
-                </div>
-            </div>
-
             <!-- 添加更多内容卡片 -->
         </div>
     </div>
@@ -148,8 +143,8 @@
         </p>
     </footer>
 
-    <!-- 引入 MDUI JS -->
-    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js"></script>
+    <!-- 引入 MDUI JS（字节跳动 CDN） -->
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js"></script>
     <!-- 自定义脚本 -->
     <script>
         // 标签筛选功能
